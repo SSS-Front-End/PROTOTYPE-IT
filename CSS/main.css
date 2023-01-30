@@ -2,7 +2,7 @@
 	width: 100%;
 	height: 80vh;
 	position: relative;
-	background-image: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 45.64%, rgba(255, 255, 255, 0) 100.72%), linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 45.64%, rgba(255, 255, 255, 0) 100.72%), linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+	background-image: linear-gradient(90deg, var(--navCol) 0%, rgb(27, 95, 12) 35.64%, rgba(255, 255, 255, 0) 60%), linear-gradient(90deg, #FFFFFF 14%, #FFFFFF 35.64%, rgba(255, 255, 255, 0) 100.72%), linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 35.64%, rgba(255, 255, 255, 0) 60.72%);
 }
 
 .preview__content {
@@ -11,7 +11,7 @@
 
 .preview__video {
 	height: 100%;
-	width: 50%;
+	width: 60%;
 	position: absolute;
 	object-fit: cover;
 	top: 0;

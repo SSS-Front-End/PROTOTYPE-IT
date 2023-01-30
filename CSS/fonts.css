@@ -19,6 +19,11 @@
 	src: url(/Fonts/Inter-Regular.ttf);
 }
 @font-face {
+	font-family: "Inter";
+	font-weight: 500;
+	src: url(/Fonts/Inter-Medium.ttf);
+}
+@font-face {
 	font-family: "Open-Sans";
 	font-weight: 700;
 	src: url(/Fonts/OpenSans-Bold.ttf);

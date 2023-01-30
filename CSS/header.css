@@ -29,6 +29,10 @@ header nav {
 .menu__link {
 	color: var(--bodyCol);
 	font-size: 18px;
+	text-transform: uppercase;
+	font-family: var(--fInter), sans-serif;
+	color: var(--navCol);
+	font-weight: 500;
 }
 
 .menu__link_icon {

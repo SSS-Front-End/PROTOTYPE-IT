@@ -10,8 +10,9 @@
 	--fInter: "Inter";
 	--fAwesome: "fontawesome";
 	--whiteGreen: #B8FAA7;
-	--lime: #7DF453;
+	--lime: #082302;
 	--darkGreen: #006204;
+	--navCol: #082302;
 	--dark: #000000;
 	--white: #FFFFFF;
 }
@@ -45,9 +46,13 @@ ul {
 	letter-spacing: 0.03em;
 	cursor: pointer;
 	transition: 200ms;
+	font-family: var(--fInter);
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .btn:hover {
 	background-color: var(--lime);
 	border: 1px solid var(--white);
+	color: var(--white);
 }
