@@ -243,6 +243,7 @@
 .registration-content {
 	width: 1277px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .registration_div {
@@ -266,4 +267,112 @@
 	font-size: 16px;
 	line-height: 88.52%;
 	text-align: end;
+}
+
+.registration_form {
+	width: 454px;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	margin-top: 6px;
+}
+
+.form_div {
+	width: 100%;
+	display: flex;
+}
+
+.form-icon {
+	width: 35px;
+	height: 45px;
+	background-color: var(--formIconBGC);
+	border-radius: 5px 0px 0px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_div input {
+	width: 421px;
+	padding-left: 17px;
+	font-family: var(--fInter);
+	font-weight: 300;
+}
+
+.form-bottom_btns {
+	justify-content: space-between;
+}
+
+.form_btn {
+	width: 258px;
+	border-radius: 50px;
+	padding: 18px 30px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 20px;
+	filter: drop-shadow(0px 15px 16px rgba(0, 0, 0, 0.2));
+
+	font-family: var(--fInter);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 61.52%;
+	letter-spacing: 0.015em;
+}
+
+.trash_div {
+	width: 62px;
+	height: 61px;
+	background-color: var(--white);
+	border-radius: 50%;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	position: relative;
+}
+
+.menejer_img {
+	position: absolute;
+	top: 31px;
+	right: 0;
+}
+
+footer {
+	background-color: rgba(47, 100, 28, 0.7);
+}
+
+.footer-content {
+	padding: 45px 0 143px 10px;
+	display: flex;
+}
+
+.footer-content .logo {
+	align-items: start;
+}
+
+.footer-links_div {
+	display: flex;
+	gap: 106px;
+}
+
+.footer-links_div div {
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+}
+
+.footer-links_div div h6,
+.footer-links_div div a {
+	font-family: var(--fInter);
+}
+
+.footer-links_div div h6 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.footer-links_div div a {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
 }
