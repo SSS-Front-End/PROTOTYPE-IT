@@ -1,20 +1,378 @@
-.preview {
-	width: 100%;
-	height: 80vh;
-	position: relative;
-	background-image: linear-gradient(90deg, var(--navCol) 0%, rgb(27, 95, 12) 35.64%, rgba(255, 255, 255, 0) 60%), linear-gradient(90deg, #FFFFFF 14%, #FFFFFF 35.64%, rgba(255, 255, 255, 0) 100.72%), linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 35.64%, rgba(255, 255, 255, 0) 60.72%);
+.cours__box {
+	display: flex;
+	padding: 27px 52px 0 64px;
 }
 
-.preview__content {
+.cours__box-content {
+	width: 420px;
+	margin-left: 82px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cours__box-content * {
+	text-align: center;
+}
+
+.cours__tabs {
+	width: 363px;
+	text-align: center;
+	margin: 17.5px 0 38px 64px;
+	background-color: var(--white);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.cours__tabs input {
+	display: none;
+}
+
+.cours__tabs label {
+	display: block;
+	padding: 14px 45px;
+	cursor: pointer;
 	position: relative;
 }
 
-.preview__video {
-	height: 100%;
-	width: 60%;
+.cours__tabs label::after {
+	content: '';
+	background: var(--dark);
+	height: 0.5px;
+	width: 88%;
 	position: absolute;
-	object-fit: cover;
-	top: 0;
+	transform: translateX(-50%);
+	bottom: 0;
+	left: 50%;
+}
+
+.no-after::after {
+	content: none;
+}
+
+.cours__tabs label:last-child::after {
+	content: none;
+}
+
+.cours__tabs-link {
+	width: 100%;
+	height: 100%;
+	font-family: var(--fInter), sans-serif;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 20px;
+	color: var(--navCol);
+}
+
+.coursActive {
+	background-color: var(--tabActive);
+	transition: .4s;
+}
+
+.coursActive>p {
+	color: var(--white);
+}
+
+.couses-img_div img {
+	position: absolute;
 	right: 0;
-	z-index: -20;
+	bottom: 0;
+}
+
+.courses-title {
+	margin-bottom: 18px;
+	font-family: var(--fInter);
+	font-weight: 500;
+	font-size: 30px;
+	margin-top: 23px;
+}
+
+.courses-desc {
+	font-size: 16px;
+	font-family: var(--fInter);
+	font-weight: 400;
+	margin-bottom: 21px;
+}
+
+.sub_title {
+	font-family: var(--fInter);
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 41.27px;
+}
+
+.cours__languages {
+	width: 349px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.cours__languages__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cours__languages__box img {
+	width: 55px;
+	height: 60.8px;
+	vertical-align: bottom;
+	object-fit: contain;
+	margin-bottom: 18.36px;
+}
+
+.cours__languages::before {
+	content: "";
+	width: 70px;
+	height: 0.5px;
+	position: absolute;
+	top: 30%;
+	left: 66.30px;
+	background: var(--white);
+	border-radius: 10px;
+}
+
+.cours__languages::after {
+	content: "";
+	width: 70px;
+	height: 0.5px;
+	position: absolute;
+	top: 30%;
+	right: 67px;
+	background: var(--white);
+	border-radius: 10px;
+}
+
+.courses_btns {
+	margin-top: 19px;
+	display: flex;
+	gap: 1px;
+}
+
+.courses_btns button {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 13px;
+	padding: 16px 60px 15px 58px;
+	background-color: #2F641C;
+	color: var(--white);
+}
+
+.courses_btns button:first-child {
+	border-top-left-radius: 50px;
+}
+
+.courses_btns button:last-child {
+	border-top-right-radius: 50px;
+}
+
+.moreInfoContent_section {
+	height: 552px;
+	position: relative;
+}
+
+.moreInfo_carusel {
+	width: 1199px;
+	padding-top: 90px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.moreInfo-content_div {
+	width: 1198px;
+	margin: 0 auto;
+}
+
+.leftMoreInfoContent {
+	width: 638px;
+}
+
+.moreInfoContent_bottom {
+	width: 100%;
+	display: flex;
+	gap: 15px;
+}
+
+.contentline {
+	width: 49px;
+	height: 1px;
+	margin-top: 18px;
+	background-color: var(--white);
+}
+
+.moreInfo_title {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 39px;
+	margin-bottom: 58px;
+}
+
+.morecontent_p {
+	width: 574px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 168.69%;
+	letter-spacing: -0.06em;
+}
+
+.left-Button_Carusel,
+.right-Button_Carusel {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	cursor: pointer;
+}
+
+.right-Button_Carusel {
+	right: 0;
+}
+
+.right-Button_Carusel img {
+	transform: rotate(180deg);
+}
+
+.pictureInCarusel {
+	position: absolute;
+	top: -102px;
+	right: 0;
+}
+
+.registration-content {
+	width: 1277px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.registration_div {
+	width: 834px;
+	padding: 40px 0 66px 0;
+}
+
+.registration_div h1,
+.registration_div p {
+	font-family: 'Inter';
+}
+
+.registration-title {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 39px;
+}
+
+.registration-subTitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 88.52%;
+	text-align: end;
+}
+
+.registration_form {
+	width: 454px;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	margin-top: 6px;
+}
+
+.form_div {
+	width: 100%;
+	display: flex;
+}
+
+.form-icon {
+	width: 35px;
+	height: 45px;
+	background-color: var(--formIconBGC);
+	border-radius: 5px 0px 0px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_div input {
+	width: 421px;
+	padding-left: 17px;
+	font-family: var(--fInter);
+	font-weight: 300;
+}
+
+.form-bottom_btns {
+	justify-content: space-between;
+}
+
+.form_btn {
+	width: 258px;
+	border-radius: 50px;
+	padding: 18px 30px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 20px;
+	filter: drop-shadow(0px 15px 16px rgba(0, 0, 0, 0.2));
+
+	font-family: var(--fInter);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 61.52%;
+	letter-spacing: 0.015em;
+}
+
+.trash_div {
+	width: 62px;
+	height: 61px;
+	background-color: var(--white);
+	border-radius: 50%;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	position: relative;
+}
+
+.menejer_img {
+	position: absolute;
+	top: 31px;
+	right: 0;
+}
+
+footer {
+	background-color: rgba(47, 100, 28, 0.7);
+}
+
+.footer-content {
+	padding: 45px 0 143px 10px;
+	display: flex;
+}
+
+.footer-content .logo {
+	align-items: start;
+}
+
+.footer-links_div {
+	display: flex;
+	gap: 106px;
+}
+
+.footer-links_div div {
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+}
+
+.footer-links_div div h6,
+.footer-links_div div a {
+	font-family: var(--fInter);
+}
+
+.footer-links_div div h6 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.footer-links_div div a {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
 }
